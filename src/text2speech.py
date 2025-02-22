@@ -13,17 +13,16 @@ Version             :   2 <br>
 
 CopyRight@2024 by Sixth Smart Sense Generation<br>
 """
+from pathlib import Path
+from gtts import gTTS
 
-class Text2Speech:
-    def __init__(self):
-        pass
+def tts(text):
+    if not isinstance(text, str):
+        raise TypeError("input should be a string")
+    this_file_path = Path(__file__).resolve()
+    target_path = this_file_path.parent.parent / "data/download/speech/output.mp3"
 
-    def detect_objects(self, image):
-        """
-        Detect objects in the image
-        :param
-            image: input image
-        :return:
-            detected_objects: list of detected objects
-        """
-        pass   
+    gTTS(text=text, lang="en").save(str(target_path))
+    
+if __name__ == "__main__":
+    tts("Hello, World!")
