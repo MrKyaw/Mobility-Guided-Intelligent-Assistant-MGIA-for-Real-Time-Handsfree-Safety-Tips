@@ -1,7 +1,7 @@
 
 
 """
-Text to Speech Module
+Image to Text Module
 
 Authors			    :	xxxxx
 Emails              :   xxxxx@gmail.com
