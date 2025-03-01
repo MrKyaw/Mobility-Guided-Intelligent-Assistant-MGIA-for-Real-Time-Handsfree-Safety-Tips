@@ -1,3 +1,20 @@
 .venv
 *.pt
 data/Users/kyawkyawoo/Documents/Projects/Mobility-Guided-Intelligent-Assistant-MGIA-for-Real-Time-Handsfree-Safety-Tips/config/object_detection/config/yolov3.weights
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Coverage and test artifacts
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+

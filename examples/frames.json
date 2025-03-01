@@ -1,0 +1,56 @@
+[
+  {
+    "timestamp_s": 0.0,
+    "frame_id": 0,
+    "context": "walking",
+    "objects": [],
+    "hazards": []
+  },
+  {
+    "timestamp_s": 1.0,
+    "frame_id": 1,
+    "context": "walking",
+    "objects": [
+      {
+        "object_id": "ped-1",
+        "class": "pedestrian",
+        "confidence": 0.92,
+        "distance_m": 4.0,
+        "relative_speed_mps": 2.0,
+        "bearing_deg": -18.0,
+        "position": "left"
+      }
+    ],
+    "hazards": []
+  },
+  {
+    "timestamp_s": 2.0,
+    "frame_id": 2,
+    "context": "crossing",
+    "objects": [
+      {
+        "object_id": "ped-1",
+        "class": "pedestrian",
+        "confidence": 0.95,
+        "distance_m": 2.0,
+        "relative_speed_mps": 3.0,
+        "bearing_deg": 0.0,
+        "position": "center"
+      }
+    ],
+    "hazards": [
+      {
+        "kind": "pedestrian_path",
+        "confidence": 0.9,
+        "object_id": "ped-1"
+      }
+    ]
+  },
+  {
+    "timestamp_s": 3.0,
+    "frame_id": 3,
+    "context": "crossing",
+    "objects": [],
+    "hazards": []
+  }
+]

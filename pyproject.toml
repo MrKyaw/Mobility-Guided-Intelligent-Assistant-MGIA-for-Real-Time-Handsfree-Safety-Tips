@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mgia-realtime"
+version = "2.0.0"
+description = "Deterministic real-time risk, alarm, and hands-free speech pipeline for the Mobility-Guided Intelligent Assistant"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Kyaw Kyaw Oo", email = "kyaw.tech@gmail.com" },
+]
+keywords = [
+  "assistive-technology",
+  "accessibility",
+  "real-time",
+  "safety",
+  "time-to-collision",
+  "speech-scheduling",
+  "edge-ai",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Healthcare Industry",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+  "pytest-cov>=4.1",
+  "coverage[toml]>=7.0",
+]
+
+[project.scripts]
+mgia-realtime = "mgia_realtime.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/MrKyaw/Mobility-Guided-Intelligent-Assistant-MGIA-for-Real-Time-Handsfree-Safety-Tips"
+Source = "https://github.com/MrKyaw/Mobility-Guided-Intelligent-Assistant-MGIA-for-Real-Time-Handsfree-Safety-Tips"
+
+[tool.setuptools]
+packages = ["mgia_realtime"]
+
+[tool.pytest.ini_options]
+# The preserved original prototype lives in ``test/``. Its modules are legacy
+# placeholders that depend on the notebook-era environment, so the default run
+# targets the dependency-free package suite only.
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+filterwarnings = ["error"]
+
+[tool.coverage.run]
+source = ["mgia_realtime"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
+precision = 2
+exclude_lines = [
+  "pragma: no cover",
+  "if __name__ == .__main__.:",
+  "raise NotImplementedError",
+  "if TYPE_CHECKING:",
+]
