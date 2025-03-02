@@ -293,3 +293,8 @@ dependency-free Python packaging, and rigorous branch-level testing.
 
 MIT. See [LICENSE](LICENSE). The preserved prototype retains its original
 authorship notes in `src/`.
+
+
+⭐ Star this repo if you find it useful!
+
+Report Bug · Request Feature · Ask Question
