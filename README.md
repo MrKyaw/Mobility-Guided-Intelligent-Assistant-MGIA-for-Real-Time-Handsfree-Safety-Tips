@@ -272,7 +272,7 @@ substitute for a cane, guide dog, or human support**. Key limitations:
 
 Read the full discussion: [docs/ACCESSIBILITY_AND_SAFETY.md](docs/ACCESSIBILITY_AND_SAFETY.md).
 
-## Recruiter snapshot
+## Reviewer snapshot
 
 **What this repository demonstrates:** real-time systems design, safety-critical
 state machines, streaming/backpressure thinking, accessibility product judgment,

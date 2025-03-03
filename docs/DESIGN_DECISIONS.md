@@ -17,7 +17,7 @@ and leave the original `src/`, `config/`, `data/`, and `test/` trees intact.
 **Alternatives.** Refactor the notebook modules in place; wrap the old code
 behind optional imports; ship a Docker-only demo.
 
-**Consequences.** Recruiters and CI can run the real logic with `python3`
+**Consequences.** Reviewers and CI can run the real logic with `python3`
 alone. The new package does not exercise the old vision stack, so the
 multimodal prototype is preserved as context rather than integrated. The
 trade-off is deliberate: reproducibility and auditability over breadth.

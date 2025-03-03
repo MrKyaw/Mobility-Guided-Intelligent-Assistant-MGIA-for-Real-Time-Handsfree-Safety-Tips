@@ -2,7 +2,7 @@
 
 Metrics are intentionally in-memory and allocation-light: the pipeline must not
 block on dashboards.  A :class:`MetricsSnapshot` is an immutable export suitable
-for JSON, logs, or a recruiter-facing demo summary.
+for JSON, logs, or a reviewer-facing demo summary.
 """
 
 from __future__ import annotations
